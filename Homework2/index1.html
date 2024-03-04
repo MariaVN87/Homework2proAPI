@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            margin: 0 10px;
+            padding: 5px 10px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        .point {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<!-- Вашей задачей является создание веб-слайдера для отображения изображений на веб-странице.
+
+Создайте интерфейс веб-страницы, который включает в себя следующие элементы:
+a. Контейнер для отображения текущего изображения.
+b. Кнопки "Предыдущее изображение" и "Следующее изображение" для переключения между изображениями.
+c. Навигационные точки (индикаторы) для быстрого переключения между изображениями. -->
+
+<!-- Для создания элементов интерфейса используйте HTML.
+При клике на кнопку "Предыдущее изображение" должно отображаться предыдущее изображение.
+При клике на кнопку "Следующее изображение" должно отображаться следующее изображение.
+При клике на навигационные точки, слайдер должен переключаться к соответствующему изображению.
+
+Слайдер должен циклически переключаться между изображениями, то есть после последнего изображения должно отображаться
+первое, и наоборот.
+
+Добавьте стилизацию для слайдера и элементов интерфейса с использованием CSS для улучшения внешнего вида.
+ -->
+
+<body>
+    <div class="gallery-container">
+        <img src="https://fanibani.ru/wp-content/uploads/2022/12/kotyata-s-plyushevoj-koshkoj-v-korzine.jpg"
+            alt="Image 1">
+    </div>
+
+    <div class="navigation">
+        <button id="prevBtn">Предыдущая картинка</button>
+        <div class="points">
+            <span class="point active"></span>
+            <span class="point"></span>
+            <span class="point"></span>
+        </div>
+        <button id="nextBtn">Следующая картинка</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
